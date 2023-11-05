@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--bena标签用来创建对象
+        id：对象的唯一标识
+        class：对象所处的位置
+    -->
+    <bean id="user" class="com.wang.spring6.User"/>
+</beans>

@@ -3,9 +3,9 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <!--bena标签用来创建对象
-        id：对象的唯一标识
-        class：对象所处的位置
-    -->
-    <bean id="user" class="com.wang.spring6.bean.User"/>
+
+    <bean id="book" class="com.wang.spring6.di.Book">
+        <property name="name" value="三国演义"/>
+        <property name="price" value="20"/>
+    </bean>
 </beans>

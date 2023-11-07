@@ -1,6 +1,6 @@
-package com.wang.spring6.impl;
+package com.wang.spring6.bean.impl;
 
-import com.wang.spring6.Person;
+import com.wang.spring6.bean.Person;
 
 public class PersonImpl  implements Person {
     @Override

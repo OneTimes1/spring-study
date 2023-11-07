@@ -8,4 +8,10 @@
         class：对象所处的位置
     -->
     <bean id="user" class="com.wang.spring6.User"/>
+    <!--<bean id="user2" class="com.wang.spring6.User"/>-->
+
+    <bean id="person" class="com.wang.spring6.impl.PersonImpl"/>
+
+    <!--一个借口不可以定义两个实现类-->
+    <!--<bean id="person2" class="com.wang.spring6.impl.Person2Impl"/>-->
 </beans>

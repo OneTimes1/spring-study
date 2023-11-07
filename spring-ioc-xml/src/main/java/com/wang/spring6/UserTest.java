@@ -19,5 +19,8 @@ public class UserTest {
         //根据类型和id获取bean
         User user3 = context.getBean("user", User.class);
         logger.info("根据类型和id获取bean:"+user3);
+        //根据接口类型获取对应的实现类
+        Person person = context.getBean(Person.class);
+        person.sayHello();
     }
 }

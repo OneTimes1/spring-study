@@ -14,4 +14,15 @@
         <constructor-arg name="name" value="红楼梦"/>
         <constructor-arg name="price" value="22"/>
     </bean>
+    <!--特殊值处理：
+        1.null
+        2.大于：&lt;
+          小于：&gt;
+    -->
+    <bean id="book3" class="com.wang.spring6.di.Book">
+        <property name="name" value="&lt;&gt;"/>
+        <property name="price">
+            <null/>
+        </property>
+    </bean>
 </beans>

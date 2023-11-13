@@ -11,7 +11,7 @@ public class BookTest {
     @Test
     public void test1() {
         ApplicationContext context = new ClassPathXmlApplicationContext("bean-di.xml");
-        Book book = context.getBean(Book.class);
+        Book book = context.getBean("book",Book.class);
         System.out.println(book);
     }
 
@@ -22,6 +22,16 @@ public class BookTest {
     public void test2() {
         ApplicationContext context = new ClassPathXmlApplicationContext("bean-di.xml");
         Book book = context.getBean("bookCon",Book.class);
+        System.out.println(book);
+    }
+
+    /**
+     * 特殊字处理
+     */
+    @Test
+    public void test3() {
+        ApplicationContext context = new ClassPathXmlApplicationContext("bean-di.xml");
+        Book book = context.getBean("book3",Book.class);
         System.out.println(book);
     }
 }

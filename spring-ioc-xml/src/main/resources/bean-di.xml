@@ -4,8 +4,14 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
+    <!--根据get/set方法注入属性-->
     <bean id="book" class="com.wang.spring6.di.Book">
         <property name="name" value="三国演义"/>
         <property name="price" value="20"/>
+    </bean>
+    <!--根据构造方法注入属性-->
+    <bean id="bookCon" class="com.wang.spring6.di.Book">
+        <constructor-arg name="name" value="红楼梦"/>
+        <constructor-arg name="price" value="22"/>
     </bean>
 </beans>
